@@ -1,0 +1,165 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+h1{
+    text-align: center;
+    background-color: #633006;
+    color: white;
+    padding: 20px;
+    width:100%;
+}
+
+h2{
+    text-align: center;
+    color: #633006;
+    width:100%;
+
+}
+
+h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #633006;
+}
+
+h4{
+    text-align: center;
+    color: #633006;
+    padding: 20px;
+}
+
+fieldset{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15PX|;
+}
+
+table{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width:100%;
+    height: 440px;
+}
+
+a{
+    text-align: center;
+}
+
+nav ul{
+    background-color: wheat;
+    width:100%;
+    list-style-type: none;
+    text-align: center;
+    display: block;
+}
+
+nav li{
+    display:inline-flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: #633006;
+    padding: 10px;
+    width: 150px;
+}
+
+nav li:hover{
+    background-color: black;
+}
+
+
+img{
+    object-fit: cover;
+}
+
+
+.secciones{
+    display:flex;
+    align-items: center;
+    padding: 40px;
+}
+
+
+img {
+    max-width: 100%;
+    height: 350px;
+    display: block;
+  }
+figure {
+    width: 350px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+.productos{
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas:
+      "postre1 postre2 postre3"
+      "postre4 postre5 vuelta";
+
+    gap: 7px;
+    padding: 12px;
+}
+ 
+
+footer div{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "mail alergenos blog";
+    gap: 7px;
+    padding: 12px;
+    text-align: center;
+    font: 15px sans-serif;
+}
+
+footer a{
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+    padding:30px;
+}
+
+.mail{
+    grid-area: mail;
+}
+
+.alergenos{
+    grid-area: alergenos;
+}
+
+.blog{
+    grid-area: blog;
+}
+
+.postre1{
+    grid-area: postre1;
+}
+
+.postre2{
+    grid-area: postre2;
+}
+
+.postre3{
+    grid-area: postre3;
+}
+
+.postre4{
+    grid-area: postre4;
+}
+
+.postre5{
+    grid-area: postre5;
+}
+
+.vuelta{
+    grid-area: vuelta;
+}

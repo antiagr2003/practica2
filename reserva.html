@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Pagina Sencilla</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <form action="index.html" method="get o post"></form>
+    <h1>La Chocolateria </h1>
+    <h2>Haz tu reserva</h2>
+
+        
+         <fieldset>
+          <legend>Datos personales</legend>
+          <p>
+           <label for="name_id">Nombre:</label><br>
+            <input type="text" id="name_id" name="nombre">
+           <!-- Campo de texto -->
+          </p>
+          <p>
+           <label for="phone_id">Teléfono:</label><br>
+           <input type="tel" id="phone_id" name="telefono">
+           <!-- Campo de teléfono -->
+          </p>
+          <p>
+           <label for="email_id">Email:</label><br>
+        <input type="email" id="email_id" name="email" required>
+        <fieldset>
+          <legend>Datos de la reserva</legend>
+          <p>Motivo:
+            <ul>
+             <li>
+               <input type="radio" id="turno1" name="turno" value="Desayuno" required>
+              <!-- Opción excluyente obligatoria -->
+              <label for="turno1">Desayuno</label>
+             </li>
+             <li>
+               <input type="radio" id="turno2" name="turno" value="Brunch" required>
+              <!-- Opción excluyente obligatoria -->
+              <label for="turno2">Brunch</label>
+             </li>
+             <li>
+               <input type="radio" id="turno3" name="turno" value="Merienda" required>
+              <!-- Opción excluyente obligatoria -->
+              <label for="turno3">Merienda</label>
+             </li>
+            </ul>
+           </p>
+          <p>
+           <label for="hora_id">Hora:</label><br>
+            <select name="modelo" id="model_id" required>
+              <option value="Hora 1"> 10:00</option>
+              
+              <option value="Hora 1"> 10:00</option>
+              
+              <option value="Hora 2"> 10:30</option>
+
+              <option value="Hora 3"> 11:00</option>
+
+              <option value="Hora 4"> 11:30</option>
+
+              <option value="Hora 5"> 12:00</option>
+
+              <option value="Hora 6"> 12:30</option>
+
+              <option value="Hora 7"> 13:00</option>
+
+              <option value="Hora 8"> 17:00</option>
+
+              <option value="Hora 9"> 17:30</option>
+
+              <option value="Hora 10"> 18:00</option>
+
+              <option value="Hora 11"> 18:30</option>
+
+              <option value="Hora 12"> 19:00</option>
+            </select>
+          </p>
+          
+          
+          <p>
+           <label for="amount_id">Personas:</label><br>
+                <input type="number" id="amount_id" name="amount" min="1" max="10" required>
+           <!-- Campo numérico con valor mínimo 1 y máximo 10 obligatorio -->
+          </p>
+
+          <p>
+            <label for="fecha_id">Fecha:</label><br>
+             <input type="date" id="fecha_id" name="fecha" min="2024-02--01">
+            <!-- Campo de fecha con valor minimo la fecha de hoy -->
+           </p>
+           <p>
+            <label for="instructions_id">Indique si algún comensal tiene una intolerancia/preferencia alimentaria:</label><br>
+             <textarea id="instructions_id" name="instrucciones" rows="5" cols="25"></textarea>
+            <!-- Área de texto -->
+           </p>
+
+          <p>Seleccione:
+           <ul>
+            <li>
+             <!-- Casilla de verificación -->
+              <input type="checkbox" id="consent_id" name="info" value="info1" required>
+             <label for="consent_id">Consiento al tratamiento de datos personales</label>
+            </li>
+            <li>
+             <!-- Casilla de verificación -->
+               <input type="checkbox" id="notificacionescorreo_id" name="info" value="info2">
+             <label for="notificacionescorreo_id">Quiero recibir notificaciones por correo</label>
+            </li>
+            <li>
+             <!-- Casilla de verificación -->
+               <input type="checkbox" id="notificacionesms_id" name="info" value="info3">
+             <label for="notificacionesms_id">Quiero recibir notificaciones por SMS</label>
+            </li>
+           </ul>
+          </p>
+         </fieldset>
+        
+         <fieldset>
+            <form action="reservadone.html">
+                <input type="submit" value="Reserva" >
+            </form>
+         </fieldset>
+</body> 
+</html>
